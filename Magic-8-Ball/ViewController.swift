@@ -16,11 +16,11 @@ class ViewController: UIViewController {
 
     @IBAction func uibutton(_ sender: Any) {
             generateAnswer()
+        print("Something to print")
     }
     
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
             guard motion == .motionShake else { return }
-
             generateAnswer()
     }
     
